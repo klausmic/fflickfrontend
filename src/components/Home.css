@@ -1,0 +1,67 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #decbed, #8735c9);
+    color: rgba(255, 255, 255, 0.689);
+    padding: 100px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero .highlight {
+    color: #ff6f61;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* Icons */
+  .icon {
+    font-size: 3rem;
+    color: #ff6f61;
+    margin-bottom: 15px;
+  }
+  
+  /* Testimonials */
+  .testimonials-carousel {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Call to Action */
+  .cta {
+    background: linear-gradient(135deg, #ff6f61, #ff9a8b);
+    color: white;
+    padding: 50px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Moving Gradient Background */
+.moving-gradient {
+    background: linear-gradient(45deg, #ff6f61, #0d6efd, #ff9a8b, #0056b3);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+    color: white;
+    padding: 100px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+  
+  

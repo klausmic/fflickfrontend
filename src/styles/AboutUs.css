@@ -1,0 +1,58 @@
+/* Background with a gradient and subtle animation */
+.about-us {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: 200% 200%;
+    animation: gradientBackground 10s ease infinite;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Gradient animation */
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Mission and Vision Section */
+  .mission-vision h3 {
+    font-size: 1.8rem;
+    color: #f9ed69;
+  }
+  
+  .mission-vision p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Image styling */
+  .about-us img {
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Headings */
+  .about-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Animation Delays */
+  .animate__delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animate__delay-2s {
+    animation-delay: 2s;
+  }
+  

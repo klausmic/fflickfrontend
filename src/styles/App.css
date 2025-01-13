@@ -1,0 +1,16 @@
+.hero {
+  background: linear-gradient(45deg, #ff6f61, #0d6efd, #ff9a8b, #0056b3);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+    color: white;
+    padding: 100px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta {
+  background-color: #343a40;
+}
+
+.cta h3 {
+  margin-bottom: 20px;
+}

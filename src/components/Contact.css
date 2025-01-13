@@ -1,0 +1,34 @@
+.contact-us {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b784ea, #63037b);
+    background-size: 200% 200%;
+    animation: gradientBackground 10s ease infinite;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Background with a gradient and subtle animation */
+.about-us {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: 200% 200%;
+    animation: gradientBackground 10s ease infinite;
+    color: white;
+    display: flex;
+    align-items: center;
+  }

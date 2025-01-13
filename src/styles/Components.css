@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .header ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+  }
+  
+  .home, .about, .services, .contact {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .footer {
+    background: linear-gradient(135deg, #2d0954, #99f2c8);
+    color: white;
+    padding: 20px 0;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6f61;
+  }
+
+  /* Button Hover Effects */
+button, .btn {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+button::before, .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  transition: left 0.3s ease-in-out;
+}
+
+button:hover::before, .btn:hover::before {
+  left: 100%; /* Creates a "sweep" effect */
+}
+
+  
