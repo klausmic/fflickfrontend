@@ -1,0 +1,129 @@
+/* MentorshipPlan.css */
+
+.mentorship-plan-page {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .custom-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .card-text ul {
+    padding-left: 20px;
+  }
+  
+  .card-text ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .card-text ul li strong {
+    color: #000;
+  }
+  
+  .pricing-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .original-price {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .discounted-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  .pricing-subtext {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+  }
+  
+  .cta-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .closing-note {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 30px;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .pricing-title {
+      font-size: 1.5rem;
+    }
+  
+    .discounted-price {
+      font-size: 1.8rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .card-title {
+      font-size: 1.5rem;
+    }
+  }
+  

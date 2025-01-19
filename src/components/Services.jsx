@@ -1,28 +1,34 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { FaLaptopCode, FaChalkboardTeacher, FaLightbulb } from "react-icons/fa";
+import { FaUserTie, FaUsers, FaClock } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // For navigation to detailed pages
 import "animate.css";
 import "../styles/Services.css";
 
 const Services = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
-      icon: <FaLaptopCode size={50} />,
-      title: "Skill Development",
+      icon: <FaUserTie size={50} />,
+      title: "One-on-One Counseling",
       description:
-        "We will create a personalized roadmap for you, outlining the specific courses you should take and guiding you on where to access them, ensuring you have a clear and structured path to follow.",
+        "Get personalized guidance with actionable steps to kickstart your career journey. Tailored roadmaps, resource recommendations, and expert insights included.",
+      link: "/one-on-one-counseling", // Navigation path
     },
     {
-      icon: <FaChalkboardTeacher size={50} />,
-      title: "Personalized Career Guidance",
+      icon: <FaUsers size={50} />,
+      title: "Group Counseling",
       description:
-        "Receive one-on-one counseling sessions to help you choose the best path tailored to your aspirations.",
+        "Join focused batches led by domain-specific industry experts. Personalized roadmaps, doubt sessions, and project guidance provided.",
+      link: "/group-counseling", // Navigation path
     },
     {
-      icon: <FaLightbulb size={50} />,
-      title: "Interactive Workshops",
+      icon: <FaClock size={50} />,
+      title: "6-Month Mentorship Plan",
       description:
-        "Participate in engaging workshops designed to enhance learning and foster creativity.",
+        "A comprehensive program combining skill development, project building, and interview preparation for career success.",
+      link: "/six-month-mentorship", // Navigation path
     },
   ];
 
@@ -45,7 +51,11 @@ const Services = () => {
                   <div className="service-icon mb-3">{service.icon}</div>
                   <Card.Title>{service.title}</Card.Title>
                   <Card.Text>{service.description}</Card.Text>
-                  <Button variant="primary" className="service-button">
+                  <Button
+                    variant="primary"
+                    className="service-button"
+                    onClick={() => navigate(service.link)}
+                  >
                     Learn More
                   </Button>
                 </Card.Body>

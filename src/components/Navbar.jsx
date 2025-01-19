@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 import React from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaHome, FaInfoCircle, FaEnvelope, FaCog } from "react-icons/fa";
 
 const MyNavbar = () => {
@@ -39,7 +39,7 @@ const MyNavbar = () => {
               <FaEnvelope style={{ marginRight: "5px" }} /> Contact
             </Nav.Link>
           </Nav>
-          <Button
+          {/* <Button
             href="#signup"
             style={{
               marginLeft: "15px",
@@ -50,7 +50,7 @@ const MyNavbar = () => {
             }}
           >
             Sign Up
-          </Button>
+          </Button> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
